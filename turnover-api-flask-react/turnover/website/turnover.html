@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ptbr">
+<head>
+	<meta charset="UTF-8">
+	<title>Previsão de Turnover</title>
+	<link rel="icon" href="https://static.thenounproject.com/png/305579-200.png" type="image/png">
+	<link rel="stylesheet" href="style.css">	
+</head>
+<body>
+	<header class="header">
+		<h1>Página do Turnover</h1>	
+		<nav>
+			<ul>
+			  <li><a href="./index.html">Página Inicial</a></li>
+			</ul>
+		  </nav>	
+	</header>	
+	
+	<div class="container" id="formulario">
+		<label for="idade">Idade:</label>
+		<input type="number" id="idade" name="idade" min="18" max="100">
+		<br>
+		<label for="pontuacao">Pontuação do Teste:</label>
+		<input type="number" id="pontuacao" name="pontuacao" min="0" max="2500">
+		<br>
+		<label for="dpto">Departamento:</label>
+		<select type="number" id="dpto" name="dpto">
+			<option value="">Selecione o Departamento</option>
+			<option value="0">Engenharia</option>
+			<option value="1">Vendas</option>
+			<option value="2">RH</option>
+		</select>
+		<br>
+		<label for="distancia_do_trabalho">Distância de Casa para o Trabalho:</label>
+		<input type="number" id="distancia_do_trabalho" name="distancia_do_trabalho" min="1" max="29">
+		<br>
+		<label for="educacao">Educação:</label>
+		<select type="number" id="educacao" name="educacao">
+			<option value="">Selecione a Escolaridade</option>
+			<option value="0">Médio Completo</option>
+			<option value="1">Superior Incompleto - Cursando</option>
+			<option value="2">Superior Incompleto</option>
+			<option value="3">Superior Completo</option>
+			<option value="4">Pós-gradução</option>
+		</select>
+		<br>
+		<label for="satisfacao">Grau de Satisfação:</label>
+		<input type="number" id="satisfacao" name="satisfacao" min="1" max="4">
+		<br>
+		<label for="genero">Sexo:</label>
+		<select type="text" id="genero" name="genero">
+			<!-- com base nos dados que obtive eram apenas esses -->
+			<option value="">Selecione o Sexo</option>
+			<option value="0">Masculino</option>
+			<option value="1">Feminino</option>	
+		</select>
+		<br>
+		<label for="estado_civil">Estado Civil:</label>
+		<select type="text" id="estado_civil" name="estado_civil">
+			<!-- com base nos dados que obtive eram apenas esses -->
+			<option value="">Selecione o Estado Civil</option>
+			<option value="0">Casado</option>
+			<option value="1">Solteiro</option>	
+			<option value="2">Divorciado</option>	
+		</select>
+		<br>
+		<label for="renda">Renda:</label>
+		<input type="number" id="renda" name="renda" min="0" max="100000">
+		<br>
+		<label for="anos_exp">Anos de Experiência:</label>
+		<input type="number" id="anos_exp" name="anos_exp" min="0" max="50">
+		<br>
+		<label for="anos_ultima_empresa">Anos na Última Empresa:</label>
+		<input type="number" id="anos_ultima_empresa" name="anos_ultima_empresa" min="0" max="50">
+		<br>
+		<button id="generate">Rodar Modelo</button>
+		<button id="generate" onclick="retornaResultado()" type="submit">Consulta</button>
+		<!-- <button id="generate"><a href="./template.html">Rodar Modelo</a></button> -->
+	</div>
+	
+	<footer>
+		<p>TP3 - Projeto de Bloco de Ariel Carvalho Alves</p>
+	</footer>
+
+	<script src="./scripts/api-turnover.js"></script>
+	<script src="./scripts/alert.js"></script>
+</body>
+</html>
