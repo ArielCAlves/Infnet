@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!--    https://www.w3schools.com/colors/colors_picker.asp-->
+    <!--    HTML Color Picker-->
+    <color name="orange_50">#eb0258</color>
+    <color name="orange_40">#eb0258</color>
+    <color name="orange_30">#eb0258</color>
+    <color name="orange_20">#662900</color>
+    <color name="orange_10">#331400</color>
+
+    <color name="yellow_90">#ffffcc</color>
+    <color name="yellow_80">#ffff99</color>
+    <color name="yellow_70">#2b2628</color>
+    <color name="yellow_60">#ffff33</color>
+    <color name="yellow_50">#2b2628</color>
+    <color name="yellow_40">#cccc00</color>
+    <color name="yellow_30">#999900</color>
+    <color name="yellow_20">#666600</color>
+    <color name="yellow_10">#333300</color>
+
+    <color name="black_90">#2b2628</color>
+    <color name="red_80">#a6033f</color>
+    <color name="purple_80">#5a0e3d</color>
+    <color name="blue_10">#74819d</color>
+    <color name="purple_70">#3f264d</color>
+    <color name="blue_15">#5a5c75</color>
+    <color name="purple_40">#51445f</color>
+    <color name="purple_90">#492d49</color>
+
+    <color name="red">#FF0000</color>
+
+
+</resources>

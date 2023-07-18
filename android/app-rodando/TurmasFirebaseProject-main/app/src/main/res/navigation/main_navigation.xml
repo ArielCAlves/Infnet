@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.arielcarvalho.android.turmasfirebaseproject.main.ui.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_turmasFragment"
+            app:destination="@id/turmasFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_alunosFragment"
+            app:destination="@id/alunosFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_crypto"
+            app:destination="@id/crypto" />
+        <action
+            android:id="@+id/action_homeFragment_to_localizacao"
+            app:destination="@id/localizacao" />
+    </fragment>
+    <fragment
+        android:id="@+id/turmasFragment"
+        android:name="com.arielcarvalho.android.turmasfirebaseproject.main.ui.TurmasFragment"
+        android:label="fragment_turmas"
+        tools:layout="@layout/fragment_turmas" >
+        <action
+            android:id="@+id/action_turmasFragment_to_cadastrarTurmaFragment"
+            app:destination="@id/cadastrarTurmaFragment" />
+        <action
+            android:id="@+id/action_turmasFragment_to_editarTurmaFragment"
+            app:destination="@id/editarTurmaFragment" />
+        <action
+            android:id="@+id/action_turmasFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cadastrarTurmaFragment"
+        android:name="com.arielcarvalho.android.turmasfirebaseproject.main.ui.CadastrarTurmaFragment"
+        android:label="fragment_cadastrar_turma"
+        tools:layout="@layout/fragment_cadastrar_turma" />
+    <fragment
+        android:id="@+id/editarTurmaFragment"
+        android:name="com.arielcarvalho.android.turmasfirebaseproject.main.ui.EditarTurmaFragment"
+        android:label="fragment_editar_turma"
+        tools:layout="@layout/fragment_editar_turma" >
+        <action
+            android:id="@+id/action_editarTurmaFragment_to_inscreverAlunosFragment"
+            app:destination="@id/inscreverAlunosFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/alunosFragment"
+        android:name="com.arielcarvalho.android.turmasfirebaseproject.main.ui.AlunosFragment"
+        android:label="AlunosFragment"
+        tools:layout="@layout/fragment_alunos" >
+        <action
+            android:id="@+id/action_alunosFragment_to_cadastrarAlunoFragment"
+            app:destination="@id/cadastrarAlunoFragment" />
+        <action
+            android:id="@+id/action_alunosFragment_to_editarAlunoFragment"
+            app:destination="@id/editarAlunoFragment" />
+        <action
+            android:id="@+id/action_alunosFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cadastrarAlunoFragment"
+        android:name="com.arielcarvalho.android.Alunosfirebaseproject.main.ui.CadastrarAlunoFragment"
+        android:label="CadastrarAlunoFragment"
+        tools:layout="@layout/fragment_cadastrar_aluno" />
+    <fragment
+        android:id="@+id/editarAlunoFragment"
+        android:name="com.arielcarvalho.android.turmasfirebaseproject.main.ui.EditarAlunoFragment"
+        android:label="fragment_editar_aluno"
+        tools:layout="@layout/fragment_editar_aluno" />
+    <fragment
+        android:id="@+id/inscreverAlunosFragment"
+        android:name="com.arielcarvalho.android.turmasfirebaseproject.main.ui.InscreverAlunosFragment"
+        android:label="fragment_inscrever_alunos"
+        tools:layout="@layout/fragment_inscrever_alunos" />
+    <fragment
+        android:id="@+id/crypto"
+        android:name="com.arielcarvalho.android.turmasfirebaseproject.main.ui.CryptoActivity"
+        android:label="fragment_crypto"
+        tools:layout="@layout/fragment_crypto" >
+        <action
+            android:id="@+id/action_crypto_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/localizacao"
+        android:name="com.arielcarvalho.android.turmasfirebaseproject.main.ui.LocalAdMob"
+        android:label="fragment_localizacao"
+        tools:layout="@layout/fragment_localizacao" />
+</navigation>

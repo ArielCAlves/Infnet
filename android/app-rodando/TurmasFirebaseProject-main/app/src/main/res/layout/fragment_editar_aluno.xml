@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".main.ui.EditarAlunoFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="24dp"
+            app:boxBackgroundColor="@color/white"
+            app:hintTextColor="@color/orange_30">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:id="@+id/input_nome_estudante"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nome do estudante" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="24dp"
+            app:boxBackgroundColor="@color/white"
+            app:hintTextColor="@color/orange_30"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:id="@+id/input_nro_inscricao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Matrícula" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="24dp"
+            app:boxBackgroundColor="@color/white"
+            app:hintTextColor="@color/orange_30"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:id="@+id/input_idade"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:hint="Idade" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btn_atualizar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp"
+            android:layout_marginTop="48dp"
+            android:text="Atualizar" />
+
+
+    </LinearLayout>
+
+
+</FrameLayout>

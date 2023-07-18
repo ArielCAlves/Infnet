@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".main.ui.CadastrarTurmaFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="24dp"
+            app:boxBackgroundColor="@color/white"
+            app:hintTextColor="@color/orange_30">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:textSize="18sp"
+                android:textColor="@color/orange_30"
+                android:textColorHint="@color/orange_30"
+                android:id="@+id/input_nome_curso"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nome da Turma" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="24dp"
+            app:boxBackgroundColor="@color/white"
+            app:hintTextColor="@color/orange_30"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:textSize="18sp"
+                android:textColor="@color/orange_30"
+                android:textColorHint="@color/orange_30"
+                android:id="@+id/input_nome_instrutor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nome d@ Professor@" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="24dp"
+            app:boxBackgroundColor="@color/white"
+            app:hintTextColor="@color/orange_30"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:textSize="18sp"
+                android:textColor="@color/orange_30"
+                android:textColorHint="@color/orange_30"
+                android:id="@+id/input_hora_da_aula"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Horário" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btn_cadastrar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp"
+            android:layout_marginTop="48dp"
+            android:text="Cadastrar" />
+
+
+    </LinearLayout>
+
+</FrameLayout>

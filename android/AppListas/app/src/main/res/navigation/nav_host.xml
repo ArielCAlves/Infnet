@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_host"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.infnet.AppAnimes.fragments.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/loginToCadastroUsuario"
+            app:destination="@id/cadastroUsuarioFragment" />
+        <action
+            android:id="@+id/loginToListas"
+            app:destination="@id/listasFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cadastroUsuarioFragment"
+        android:name="com.infnet.AppAnimes.fragments.CadastroUsuarioFragment"
+        android:label="fragment_cadastro_usuario"
+        tools:layout="@layout/fragment_cadastro_usuario" >
+        <action
+            android:id="@+id/cadastroUsuarioToLogin"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/listasFragment"
+        android:name="com.infnet.AppAnimes.fragments.ListasFragment"
+        android:label="fragment_listas"
+        tools:layout="@layout/fragment_listas" >
+        <action
+            android:id="@+id/listasToCadastroLista"
+            app:destination="@id/cadastroListaFragment" />
+        <action
+            android:id="@+id/listasToItens"
+            app:destination="@id/itensFragment" />
+        <action
+            android:id="@+id/listasVoltarLogin"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cadastroListaFragment"
+        android:name="com.infnet.AppAnimes.fragments.CadastroListaFragment"
+        android:label="fragment_cadastro_lista"
+        tools:layout="@layout/fragment_cadastro_lista" >
+        <action
+            android:id="@+id/cadastroListaToListas"
+            app:destination="@id/listasFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/itensFragment"
+        android:name="com.infnet.AppAnimes.fragments.ItensFragment"
+        android:label="fragment_itens"
+        tools:layout="@layout/fragment_itens" >
+        <action
+            android:id="@+id/itensToCadastroItem"
+            app:destination="@id/cadastroItemFragment" />
+        <action
+            android:id="@+id/itensVoltarListas"
+            app:destination="@id/listasFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cadastroItemFragment"
+        android:name="com.infnet.AppAnimes.fragments.CadastroItemFragment"
+        android:label="fragment_cadastro_item"
+        tools:layout="@layout/fragment_cadastro_item" >
+        <action
+            android:id="@+id/cadastroItemToItens"
+            app:destination="@id/itensFragment" />
+    </fragment>
+</navigation>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".main.ui.InscreverAlunosFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_pesquisa_estudante"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginHorizontal="16dp"
+                app:boxBackgroundColor="@color/white"
+                app:endIconMode="custom"
+                app:endIconDrawable="@drawable/ic_search"
+                app:endIconTint="@color/orange_30"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/input_pesquisa_estudante"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+
+
+                    android:hint="Pesquisar estudante"
+                    android:textColor="@color/orange_30"
+
+                    android:textColorHint="@color/orange_30"
+                    android:textSize="18sp"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_inscrever_estudantes_na_turma"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginVertical="24dp"
+            android:layout_weight="1"
+            tools:listitem="@layout/inscrever_estudante_na_turma_list_item"/>
+
+    </LinearLayout>
+
+</FrameLayout>
