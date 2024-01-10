@@ -16,13 +16,6 @@
 
 
 
-## # Pasta android
-| Descrição                               | Link |
-|:------------------------------------:|:------:|
-| Desenvolvimento de app Android nativo com Kotlin. O principal app foi um CRUD com Firebase, autenticação, segurança, entre outras funcionalidades. | [![Link do Repositório](https://github.com/ArielCAlves/Infnet/blob/main/android/app-rodando/prints/home.png)](https://github.com/ArielCAlves/Infnet/tree/main/android) |
-
-
-
 ## # Pasta appSistemaRecomendacao
 | Descrição                               | Link |
 |:------------------------------------:|:------:|
@@ -48,7 +41,22 @@
 | Desenvolvimento de app com React Native utilizando o Expo para a publicação funcionar na Web, no Android e no IOS. | [![Link do Repositório](https://github.com/ArielCAlves/Infnet/blob/main/react-native-expo/imgs/react-native-02.png)](https://github.com/ArielCAlves/Infnet/tree/main/react-native-expo) |
 
 
+
+## # Pasta java
+| Descrição                               | Link |
+|:------------------------------------:|:------:|
+| Desenvolvimento com Java para exercitar orientação a objeto, heranças, polimorfismos, etc. | [![Link do Repositório](https://github.com/ArielCAlves/Infnet/blob/main/java/img/app-java.png)](https://github.com/ArielCAlves/Infnet/tree/main/java) |
+
+
+
 ## # Pasta redes
 | Descrição                               | Link |
 |:------------------------------------:|:------:|
 | Script para cálculo de subredes do curso de Arquitetura de Computadores e Rede. | [![Link do Repositório](https://github.com/ArielCAlves/Infnet/blob/main/redes/img/subnetting.jpg)](https://github.com/ArielCAlves/Infnet/tree/main/redes) |
+
+
+
+## # Pasta android
+| Descrição                               | Link |
+|:------------------------------------:|:------:|
+| Desenvolvimento de app Android nativo com Kotlin. O principal app foi um CRUD com Firebase, autenticação, segurança, entre outras funcionalidades. | [![Link do Repositório](https://github.com/ArielCAlves/Infnet/blob/main/android/app-rodando/prints/home.png)](https://github.com/ArielCAlves/Infnet/tree/main/android) |
