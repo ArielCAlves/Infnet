@@ -1,0 +1,22 @@
+﻿@page
+@model IndexModel
+
+
+<div class="row justify-content-md-center">
+
+    @foreach (var item in Model.ListaHQ)
+    {
+        <div class="card col-3 m-3">
+            <img src="@item.ImagemUri" class="p-3" style="border-radius: 25px">
+            <div class="card-body">
+                <h5 class="card-title">@item.Titulo</h5>
+                <p class="card-text">@item.Descricao</p>
+                <a class="btn btn-primary"
+                asp-page="/Details"
+                asp-route-slug="@item.NomeSlug"
+                asp-route-id="@item.HQId">Ver mais</a>
+            </div>
+        </div>
+    }
+</div>
+

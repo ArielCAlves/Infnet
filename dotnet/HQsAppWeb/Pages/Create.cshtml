@@ -1,0 +1,88 @@
+﻿@page
+@model CreateModel
+
+<div class="row pt-5">
+ <div class="col-md-4">
+ <form method="post">
+   <h4>Inclusão de HQ</h4>
+   <hr />
+   <div asp-validation-summary="All" class="text-danger"></div>
+
+   <div class="form-group">
+     <label asp-for="HQ.Titulo" class="control-label"></label>
+     <input asp-for="HQ.Titulo" class="form-control" />
+     <span asp-validation-for="HQ.Titulo" class="text-danger"></span>
+   </div>
+
+   <div class="form-group">
+     <label asp-for="HQ.Descricao" class="control-label"></label>
+     <input asp-for="HQ.Descricao" class="form-control" />
+     <span asp-validation-for="HQ.Descricao" class="text-danger"></span>
+   </div>
+
+    <div class="form-group">
+        <label asp-for="HQ.ImagemUri" class="control-label"></label>
+        <input asp-for="HQ.ImagemUri" class="form-control" />
+        <span asp-validation-for="HQ.ImagemUri" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="HQ.Preco" class="control-label"></label>
+        <input asp-for="HQ.Preco" class="form-control" />
+        <span asp-validation-for="HQ.Preco" class="text-danger"></span>
+    </div>
+
+   <div class="form-group mt-3 mb-3">
+     <input class="form-check-input" asp-for="HQ.EntregaExpressa" />
+     <label asp-for="HQ.EntregaExpressa"></label>
+   </div>
+
+    <div class="form-group">
+        <label asp-for="HQ.DataCadastro" class="control-label"></label>
+        <input asp-for="HQ.DataCadastro" class="form-control" />
+        <span asp-validation-for="HQ.DataCadastro" class="text-danger"></span>
+    </div>
+
+    <div class="form-group mt-3 mb-3">
+
+        <label asp-for="HQ.EditoraId" class="control-label"></label>
+
+        <select class="form-select" asp-for="HQ.EditoraId"
+                asp-items="Model.EditoraOptionItems">
+            <option value="">Selecione uma opção</option>
+        </select>
+
+        <span asp-validation-for="HQ.EditoraId" class="text-danger">
+        </span>
+    </div>
+
+    @*<div class="form-group">
+        <label asp-for="HQ.Categorias" class="control-label"></label>
+        <input asp-for="HQ.Categorias" class="form-control" />
+        <span asp-validation-for="HQ.Categorias" class="text-danger"></span>
+   </div>*@
+
+    <div class="form-group mt-3 mb-3">
+
+        <label asp-for="HQ.Categorias" class="control-label"></label>
+
+        <select class="form-select" asp-for="CategoriaIds"
+            asp-items="Model.CategoriaOptionItems">
+        </select>
+
+        <span asp-validation-for="HQ.Categorias" class="text-danger">
+        </span>
+    </div>
+
+   <div class="form-group mt-4">
+    <input type="submit" value="Salvar" class="btn btn-primary" />
+   </div>
+ </form>
+ </div>
+</div>
+
+@section Scripts{
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

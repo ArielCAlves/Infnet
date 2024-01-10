@@ -1,0 +1,22 @@
+U;Gold;true;Ariel Carvalho;12345678900;ariel@gmail.com;07/01/1990;M
+A;YuYu Hakusho;112;99;500;Detetive espiritual chamado Yusuke Urameshi...
+A;Naruto;500;92;700;Um ninja carismatico que adora ramen
+A;DBZ;291;90;2000;Alienigena invade a Terra e vira heroi
+A;Hunter x Hunter;148;100;1500;Gon Freecss é um garoto que descobre que seu pai, Ging, foi um Caçador e que, ao contrário do que Gon pensava, ele está vivo
+G;Shounen;10000
+G;Shoujo;15000
+G;Kodomo;5000
+G;Seinen;2000
+O;Rurouni Kenshin: Trust & Betrayal;1h e 58min;97;200;Na era da Restauração Meiji do Japão, um assassino recupera sua humanidade
+O;Naruto OVA 008;14min;86;350;Exame Chunin das Chamas! Naruto vs. Konohamaru
+O;Naruto OVA Extra;10min;96;750;Uchiha Madara VS Senju Hashirama
+O;Blood O Último Vampiro;1h e 31min;84;150;Saya (Jun Ji-hyun), uma semi-vampira de 400 anos de idade, lutadora de espadas e com aparência de uma adolescente comum...
+U;Bronze;false;Joao;12312312311;joazinho@gmail.com;01/01/1990;M
+A;Naruto;500;92;700;Um ninja carismatico que adora ramen
+A;DBZ;291;90;2000;Alienigena invade a Terra e vira heroi
+G;Kodomo;5000
+G;Seinen;2000
+U;Silver;false;Maria;12312312322;maria@gmail.com;01/01/1989;F
+A;Hunter x Hunter;148;100;1500;Gon Freecss é um garoto que descobre que seu pai, Ging, foi um Caçador e que, ao contrário do que Gon pensava, ele está vivo
+O;Rurouni Kenshin: Trust & Betrayal;1h e 58min;97;200;Na era da Restauração Meiji do Japão, um assassino recupera sua humanidade
+O;Naruto OVA 008;14min;86;350;Exame Chunin das Chamas! Naruto vs. Konohamaru

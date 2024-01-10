@@ -1,0 +1,4 @@
+Shounen;10000
+Shoujo;15000
+Kodomo;5000
+Seinen;2000

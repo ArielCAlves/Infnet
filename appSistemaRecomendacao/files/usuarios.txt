@@ -1,0 +1,3 @@
+Ariel Carvalho;12345678900;ariel@gmail.com;07/01/1990;M;20010020
+Joao;12312312311;joazinho@gmail.com;01/01/1990;M;24240270
+Maria;12312312322;maria@gmail.com;01/01/1989;F;30575740

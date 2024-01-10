@@ -1,0 +1,54 @@
+﻿@page "/hq/{slug}/{id:int:min(1)}"
+@model HQsAppWeb.Pages.DetailsModel
+
+<h2 class="my-3">@Model.HQ.Titulo</h2>
+
+<div class="row">
+
+    <div class="col-4">
+        <img class="img-fluid rounded" src="@Model.HQ.ImagemUri">
+    </div>
+
+    <div class="col-6">
+        <h4 class="my-3">Sobre:</h4>
+        <p>@Model.HQ.Descricao</p>
+        <h4 class="my-3">Mais Info:</h4>
+        <ul>
+            <li>
+                <label asp-for="HQ.Preco"></label>:
+                @Html.DisplayFor(model => model.HQ.Preco)
+            </li>
+            <li>
+                <label asp-for="HQ.EntregaExpressa"></label>:
+                @Html.DisplayFor(model => model.HQ.EntregaExpressaFormatada)
+            </li>
+            <li>
+                <label asp-for="HQ.DataCadastro"></label>:
+                @Html.DisplayFor(model => model.HQ.DataCadastro)
+            </li>
+            @if (Model.DescricaoEditora is not null)
+            {
+                <li>
+                    <label asp-for="HQ.EditoraId"></label>:
+                    @Html.DisplayFor(model => model.DescricaoEditora)
+                </li>
+            }
+
+            @if (Model.HQ.Categorias?.Count > 0)
+            {
+                <li>
+                    <label asp-for="HQ.Categorias"></label>:
+                    @string.Join(", ", Model.HQ.Categorias.Select(item => item.Descricao))
+                </li>
+            }
+
+        </ul>
+        @if (User.Identity.IsAuthenticated)
+        {
+            <a class="btn my-3 btn-primary"
+               asp-page="/Edit" asp-route-id="@Model.HQ.HQId">Editar</a>
+        }
+        
+    </div>
+
+</div>

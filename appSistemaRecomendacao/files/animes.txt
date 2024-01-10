@@ -1,0 +1,4 @@
+YuYu Hakusho;112;99;500;Detetive espiritual chamado Yusuke Urameshi...
+Naruto;500;92;700;Um ninja carismatico que adora ramen
+DBZ;291;90;2000;Alienigena invade a Terra e vira heroi
+Hunter x Hunter;148;100;1500;Gon Freecss é um garoto que descobre que seu pai, Ging, foi um Caçador e que, ao contrário do que Gon pensava, ele está vivo
